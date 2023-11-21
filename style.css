@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    height: 100vh; /* Ajustement de la hauteur de la page */
+    overflow: hidden; /* Pour cacher le débordement */
+    position: relative; /* Ajoutez cette ligne */
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing 5s steps(40) forwards, blink-caret 0.75s step-end infinite;
+    position: absolute; /* Ajoutez cette ligne */
+    top: 0; /* Ajoutez cette ligne */
+    left: 50%; /* Ajoutez cette ligne */
+    transform: translateX(-50%); /* Ajoutez cette ligne */
+}
+
+.buttons {
+    margin-top: 20px; /* Espacement entre le texte et les boutons */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.response {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+} */
+
